@@ -14,7 +14,7 @@ photos.push({
 });
 
 router.get('/', function(req, res, next) {
-  res.render('index', {
+  res.render('photos/index', {
     title: 'Stock photos exchange',
     photos: photos
     });

@@ -1,5 +1,14 @@
-extends layout
+extends ../layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  .row
+    .medium-12.columns
+      .panel
+        p Welcome to #{title}
+  
+  .row#photos
+      - each photo in photos
+        .medium-4.columns.photo
+          h2= photo.name
+          img.th(src=photo.path)
