@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // set folder for photos
-app.set('photos', path.join(__dirname, 'public/photos'));
+app.set('public_path', path.join(__dirname, '/public'));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));

@@ -11,4 +11,5 @@ block content
       - each photo in photos
         .medium-4.columns.photo
           h2= photo.name
-          img.th(src=photo.path)
+          a(href='/photos/' + photo.id + '/download')
+            img.th(src=photo.path)
