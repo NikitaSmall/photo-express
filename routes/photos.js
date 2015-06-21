@@ -46,7 +46,7 @@ router.get('/:id/download', function(req, res, next) {
 
     // send founded file
     var path = join(req.app.get('public_path'), photo.path);
-    res.sendFile(path);
+    res.download(path, photo.name + '.jpg');
   });
 });
 

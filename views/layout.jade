@@ -6,6 +6,21 @@ html
     link(rel='stylesheet', href='/foundation/css/foundation.css')
     script(src='/foundation/js/vendor/modernizr.js')
   body
+    nav.top-bar(data-topbar, role='navigation')
+      ul.title-area
+        li.name
+          h1
+            a(href='/') Пустая главная
+      section.top-bar-section
+        ul.left
+          li
+            a(href='/photos') Фотографии
+          li
+            a(href='/photos/upload') Загрузить фотографию
+        ul.right
+          li
+            a(href='/about') Обо мне
+  
     block content
     
     script(src='/foundation/js/vendor/jquery.js')
